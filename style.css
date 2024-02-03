@@ -34,3 +34,13 @@ section#about img {
 .progress-bar {
     background-color: #289aa7;
 }
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+}
+footer {
+    margin-top: 30px;
+}
