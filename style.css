@@ -16,3 +16,21 @@
 .nav-link:hover::after {
     width: 100%;
 }
+.skill-heading {
+    margin-bottom: 2px;
+    margin-top: 10px;
+}
+
+section#about img {
+    max-width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.col-md-6 {
+    padding-top: 40px;
+}
+
+.progress-bar {
+    background-color: #289aa7;
+}
