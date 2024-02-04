@@ -21,13 +21,13 @@
     margin-top: 10px;
 }
 
-section#about img {
+.image {
     max-width: 80%;
     border-radius: 10px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
 }
 
-.col-md-6 {
+.margined {
     padding-top: 40px;
 }
 
