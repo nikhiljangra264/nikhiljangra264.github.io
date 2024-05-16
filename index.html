@@ -2,168 +2,393 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <style>
-    </style>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+	<title>Portfolio</title>
+
+	<link href="assets/img/portfolio.png" rel="icon">
+
+	<!-- Google Fonts -->
+	<link
+		href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+		rel="stylesheet">
+
+	<!-- Vendor CSS Files -->
+	<link href="assets/vendor/aos/aos.css" rel="stylesheet">
+	<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+	<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+	<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+	<!-- Template Main CSS File -->
+	<link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <a class="navbar-brand" href="#">nikhiljangra</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <section id="about" class="container mt-5 rounded margined">
-        <div class="row">
-            <!-- Left side - Photo -->
-            <div class="col-md-6 text-center">
-                <img src="data/Nikhil.jpg" alt="Photo" class="img-fluid image">
-            </div>
 
-            <!-- Right side - Name and Skills -->
-            <div class="col-md-6 margined">
-                <h2 class="text-primary">Nikhil</h2>
-                <p class="lead">Coder</p>
+	<!-- ======= Mobile nav toggle button ======= -->
+	<i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
-                <h3 class="mb-4">Skills</h3>
+	<!-- ======= Header ======= -->
+	<header id="header">
+		<div class="d-flex flex-column">
 
-                <!-- Skills -->
-                <p class="skill-heading mb-1">C++</p>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90"
-                        aria-valuemin="0" aria-valuemax="100">90%</div>
-                </div>
-                <p class="skill-heading mb-1">Python</p>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90"
-                        aria-valuemin="0" aria-valuemax="100">90%</div>
-                </div>
-                <p class="skill-heading mb-1">DSA</p>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80"
-                        aria-valuemin="0" aria-valuemax="100">80%</div>
-                </div>
-                <p class="skill-heading mb-1">ML-AI</p>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="40"
-                        aria-valuemin="0" aria-valuemax="100">40%</div>
-                </div>
-            </div>
-        </div>
-    </section>
+			<div class="profile">
+				<img src="assets/img/profile_pic.jpg" alt="" class="img-fluid rounded-circle">
+				<h1 class="text-light"><a href="index.html">Nikhil</a></h1>
+			</div>
 
-    <section id="projects" class="container mt-5">
-        <h2 class="text-primary mb-4">Projects</h2>
+			<nav id="navbar" class="nav-menu navbar">
+				<ul>
+					<li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i>
+							<span>Home</span></a></li>
+					<li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a>
+					</li>
+					<li><a href="#projects" class="nav-link scrollto"><i class="bx bx-book-content"></i>
+							<span>Projects</span></a>
+					</li>
+					<li><a href="#achivements" class="nav-link scrollto"><i class="bx bx-file-blank"></i>
+							<span>Achivements</span></a></li>
+					<li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i>
+							<span>Contact</span></a></li>
+				</ul>
+			</nav><!-- .nav-menu -->
+		</div>
+	</header><!-- End Header -->
 
-        <div class="row mb-4">
-            <div class="col-md-4">
-                <img src="data/chess_cpp.png" alt="Project 1" class="img-fluid image">
-            </div>
-            <div class="col-md-8 margined">
-                <h3>Chess C++</h3>
-                <p>chess_cpp is a free and simple UCI chess engine.
-                    chess_cpp does not include a graphical user interface (GUI) that is required to display a chessboard and to make it easy to input moves. Read the documentation for your GUI of choice for information about how to use UCI Chess Engine with it.
-                    For example Lucas Chess GUI: https://github.com/lukasmonk/lucaschessR.</p>
-                <p><span class="text-primary" style="font-weight: bold;">Skills used</span>: C++, AI, CMake, Google Test</p>
-                <a href="https://github.com/nikhiljangra264/chess_cpp" class="btn btn-primary">View Details</a>
-            </div>
-        </div>
+	<!-- ======= Hero Section ======= -->
+	<section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+		<div class="hero-container" data-aos="fade-in">
+			<h1>Nikhil</h1>
+			<p>I'm <span class="typed" data-typed-items="Developer, Programmer, Quick learner, Problem solver"></span>
+			</p>
+		</div>
+	</section><!-- End Hero -->
 
-        <div class="row mb-4">
-            <div class="col-md-4">
-                <img src="data/tiktaktoe_landing_page.png" alt="Project 2" class="img-fluid image">
-            </div>
-            <div class="col-md-8 margined">
-                <h3>Tic-Tac-Toe Python <span><img src="https://skillicons.dev/icons?i=python" alt="cpp logo"></span></h3>
-                <p>A classic Tic-Tac-Toe game with a graphical user interface (GUI) implemented in Python using the
-                    Tkinter library.It allows you to play against another player (Player vs. Player) or against the
-                    computer (Player vs. Computer). The computer player has adjustable difficulty levels (Easy, Medium,
-                    Hard).</p>
-                <p><span class="text-primary" style="font-weight: bold;">Skills used</span>: Python, Tkinter, AI</p>
-                <a href="https://github.com/nikhiljangra264/Tic-Tac-Toe" class="btn btn-primary">View Details</a>
-            </div>
-        </div>
+	<main id="main">
 
-        <div class="row mb-4">
-            <div class="col-md-4">
-                <img src="data/console_cpp_tictactoe.png" alt="Project 3" class="img-fluid image">
-            </div>
-            <div class="col-md-8 margined">
-                <h3>Tic-Tac-Toe C++ <span><img src="https://skillicons.dev/icons?i=cpp" alt="cpp logo"></span></h3>
-                <p>A Tic-Tac-Toe game with a command line interface (CLI) implemented in c++. It also has two modes with Player or Computer. The computer player has adjustable difficulty levels (Beginner, Easy, Hard,
-                    <span style="color:red">Hacker</span>).</p>
-                <p><span class="text-primary" style="font-weight: bold;">Skills used</span>: c++, AI</p>
-                <a href="https://github.com/nikhiljangra264/tictactoe" class="btn btn-primary">View Details</a>
-            </div>
-        </div>
-    </section>
+		<!-- ======= About Section ======= -->
+		<section id="about" class="about">
+			<div class="container">
+				<div class="section-title">
+					<h2>About</h2>
+					<p>I'm Nikhil, a Computer Science student. I love learning new things about programming. I have over
+						2 years of experience in programming and have worked with various languages and technologies.
+						I am currently exploring the field of Machine Learning.
+					</p>
+				</div>
 
-    <section id="contact" class="container mt-5">
-        <div class="row">
-            <div class="col-md-8 offset-md-2">
-                <h2 class="text-primary mb-4">Contact</h2>
+				<div class="row">
+					<div class="col-lg-4" data-aos="fade-right">
+						<img src="assets/img/profile_pic.jpg" class="img-fluid" alt="">
+					</div>
 
-                <p>Feel free to reach out to me via email or on the following platforms:</p>
+					<div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+						<h3>Software Developer & Programmer</h3>
+						<p class="fst-italic">
+							I have done self projects in python and c++ languages <a href="#projects">(see my
+								projects)</a>.<br>
+							I also do competitive programming.
+						</p>
+						<div class="row">
+							<div class="col-lg-6">
+								<ul>
+									<li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>B.Tech. CSE
+											(pursuing 2021-2025)</span></li>
+								</ul>
+							</div>
+							<div class="col-lg-6">
+								<ul>
+									<li><i class="bi bi-chevron-right"></i> <strong>University:</strong> <span><a
+												href="https://cuh.ac.in/" target="_blank">Central University of Haryana, Haryana,
+												India</a></span></li>
+								</ul>
+							</div>
+						</div>
+						<div class="row">
+							<h3>Profiles</h3>
+							<div class="col-lg-6">
+								<ul>
+									<li><i class="bi bi-chevron-right"></i> <a
+											href="https://leetcode.com/u/nikhiljangra264/" target="_blank">LeetCode</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-lg-6">
+								<ul>
+									<li><i class="bi bi-chevron-right"></i> <a
+											href="https://www.naukri.com/code360/profile/NikhilJangra" target="_blank">Coding Ninjas</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-lg-6">
+								<ul>
+									<li><i class="bi bi-chevron-right"></i> <a
+											href="https://www.hackerrank.com/profile/nikhiljangra264" target="_blank">HackerRank</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-lg-6">
+								<ul>
+									<li><i class="bi bi-chevron-right"></i> <a
+											href="https://www.kaggle.com/nikhiljangra264" target="_blank">Kaggle</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section><!-- End About Section -->
 
-                <div class="contact-links">
-                    <a href="mailto:nikhiljangra264@gmail.com"><img src="data/envelope.svg" alt="email" width="24"
-                            height="24"></a>
-                    <a href="https://twitter.com/nikhiljangra264" target="_blank" title="Twitter"><img
-                            src="data/twitter.svg" alt="twitter" width="24" height="24"></a>
-                    <a href="https://www.linkedin.com/in/nikhiljangra264" target="_blank" title="LinkedIn"><img
-                            src="data/linkedin.svg" alt="linkedin" width="24" height="24"></a>
-                    <a href="https://github.com/nikhiljangra264" target="_blank" title="GitHub"><img
-                            src="data/github.svg" alt="github" width="24" height="24"></a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer class="bg-dark text-light">
-        <div class="container text-center py-3">
-            <p class="mb-0">&copy; 2024 Nikhil. All rights reserved.</p>
-        </div>
-    </footer>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <script src="code/scrolling_script.js"></script>
+		<!-- ======= Skills Section ======= -->
+		<section id="skills" class="skills section-bg">
+			<div class="container">
+
+				<div class="section-title">
+					<h2>Skills</h2>
+				</div>
+
+				<div class="row skills-content">
+
+					<div class="col-lg-6" data-aos="fade-up">
+
+						<div class="progress">
+							<span class="skill">C++ <i class="val">90%</i></span>
+							<div class="progress-bar-wrap">
+								<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+									aria-valuemax="100">
+								</div>
+							</div>
+						</div>
+
+						<div class="progress">
+							<span class="skill">C <i class="val">90%</i></span>
+							<div class="progress-bar-wrap">
+								<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+									aria-valuemax="100">
+								</div>
+							</div>
+						</div>
+
+						<div class="progress">
+							<span class="skill">Python <i class="val">80%</i></span>
+							<div class="progress-bar-wrap">
+								<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+									aria-valuemax="100">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+						<div class="progress">
+							<span class="skill">DSA <i class="val">80%</i></span>
+							<div class="progress-bar-wrap">
+								<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+									aria-valuemax="100">
+								</div>
+							</div>
+						</div>
+
+						<div class="progress">
+							<span class="skill">ML <i class="val">40%</i></span>
+							<div class="progress-bar-wrap">
+								<div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+									aria-valuemax="100">
+								</div>
+							</div>
+						</div>
+
+						<div class="progress">
+							<span class="skill">Problem Solving <i class="val">95%</i></span>
+							<div class="progress-bar-wrap">
+								<div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+									aria-valuemax="100">
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<p data-aos="fade-up" data-aos-delay="200">
+						Tools and technologies that I have worked with and am interested in are:
+					</p>
+					<div class="tools-icons" data-aos="fade-up" data-aos-delay="200">
+						<img src="https://skillicons.dev/icons?i=cpp" alt="C++" title="C++" />
+						<img src="https://skillicons.dev/icons?i=c" alt="C" title="C" />
+						<img src="https://skillicons.dev/icons?i=cmake" alt="CMake" title="CMake" />
+						<img src="https://skillicons.dev/icons?i=python" alt="Python" title="Python" />
+						<img src="https://skillicons.dev/icons?i=tensorflow" alt="TensorFlow" title="TensorFlow" />
+						<img src="https://skillicons.dev/icons?i=anaconda" alt="Anaconda" title="Anaconda" />
+						<img src="https://skillicons.dev/icons?i=github" alt="GitHub" title="GitHub" />
+						<img src="https://skillicons.dev/icons?i=git" alt="Git" title="Git" />
+						<img src="https://skillicons.dev/icons?i=linux" alt="Linux" title="Linux" />
+						<img src="https://skillicons.dev/icons?i=visualstudio" alt="Visual Studio"title="Visual Studio" />
+						<img src="https://skillicons.dev/icons?i=blender" alt="Blender"title="Blender" />
+						<img src="https://skillicons.dev/icons?i=godot" alt="Godot"title="Godot" />
+					</div>
+
+				</div>
+			</div>
+		</section><!-- End Skills Section -->
+
+		<!-- ======= Portfolio Section ======= -->
+		<section id="projects" class="projects section-bg">
+			<div class="container">
+
+				<div class="section-title">
+					<h2>Projects</h2>
+				</div>
+
+				<div class="row projects-container" data-aos="fade-up">
+
+					<div class="col-lg-4 col-md-6 projects-item">
+						<div class="projects-wrap">
+							<img src="assets/img/projects/chess_cpp.png" class="img-fluid" alt="">
+							<div class="projects-links">
+								<!--
+								<a href="assets/img/projects/projects-1.jpg" data-gallery="projectsGallery"
+									class="projects-lightbox" title="App 1"><i class="bx bx-plus"></i></a> -->
+								<a href="https://github.com/nikhiljangra264/chess_cpp" title="More Details"><i class="bx bx-link"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 projects-item">
+						<div class="projects-wrap">
+							<img src="assets/img/projects/tic_tac_toe_python.png" class="img-fluid" alt="">
+							<div class="projects-links">
+								<a href="https://github.com/nikhiljangra264/tictactoe" title="More Details"><i class="bx bx-link"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 projects-item">
+						<div class="projects-wrap">
+							<img src="assets/img/projects/tic_tac_toe_cpp.png" class="img-fluid" alt="">
+							<div class="projects-links">
+								<a href="https://github.com/nikhiljangra264/Tic-Tac-Toe" title="More Details"><i class="bx bx-link"></i></a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</section><!-- End Portfolio Section -->
+
+		<section id="achivements" class="achivements">
+			<div class="container">
+
+				<div class="section-title">
+					<h2>Achivements</h2>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-6" data-aos="fade-up">
+						<h3 class="achivements-title">Certificate of Achievement</h3>
+						<div class="achivements-item">
+							<h4>code_Fresh_24</h4>
+							<p><em>For securing 2nd position</em></p>
+							<ul>
+								<li>13th march, 2024</li>
+								<li>Coding Club CUH</li>
+							</ul>
+						</div>
+						<div class="achivements-item">
+							<h4>CODE SPARDHA Arc 3</h4>
+							<p><em>For securing 2nd position in the national event CODE SPARDHA Arc 3.</em></p>
+							<ul>
+								<li>4th November, 2023</li>
+								<li>DSEU Shakarpur Campus-II</li>
+							</ul>
+						</div>
+						<div class="achivements-item">
+							<h4>Coding Ninjas</h4>
+							<p><em>For securing AIR 7018 position in the Codekaze</em></p>
+							<ul>
+								<li>June’23 Round 2 </li>
+							</ul>
+						</div>
+
+						<h3 class="achivements-title">Coding Platforms</h3>
+						<div class="achivements-item">
+							<h4>LeetCode</h4>
+							<ul>
+								<li>Global ranking of ~41,000</li>
+								<li> 350+ problems Solved</li>
+							</ul>
+						</div>
+						<div class="achivements-item">
+							<h4>HackerRank</h4>
+							<ul>
+								<li>Problem Solving and Python skill certificates on HackerRank</li>
+								<li>5★ C++, 3★ Python and 3★ C coder on HackerRank</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<!-- ======= Contact Section ======= -->
+		<section id="contact" class="contact">
+			<div class="container">
+
+				<div class="section-title">
+					<h2>Contact</h2>
+					<p>
+						Feel free to reach out to me via email or on the following platforms:
+					</p>
+				</div>
+				<div class="contact-links">
+					<a href="mailto:nikhiljangra264@gmail.com"><img src="assets/img/mail-icon.svg" alt="email"
+							width="24" height="24"></a>
+					<a href="https://twitter.com/nikhiljangra264" target="_blank" title="Twitter"><img
+							src="assets/img/twitter-icon.svg" alt="twitter" width="24" height="24"></a>
+					<a href="https://www.linkedin.com/in/nikhiljangra264" target="_blank" title="LinkedIn"><img
+							src="assets/img/linkedin-icon.svg" alt="linkedin" width="24" height="24"></a>
+					<a href="https://github.com/nikhiljangra264" target="_blank" title="GitHub"><img
+							src="assets/img/github-icon.svg" alt="github" width="24" height="24"></a>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<footer id="footer">
+		<div class="container">
+			<div class="copyright">
+				&copy; Copyright <strong><span>iPortfolio</span></strong>
+			</div>
+			<div class="credits">
+				<!-- All the links in the footer should remain intact. -->
+				<!-- You can delete the links only if you purchased the pro version. -->
+				<!-- Licensing information: https://bootstrapmade.com/license/ -->
+				<!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iprojects-bootstrap-projects-websites-template/ -->
+				Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+			</div>
+		</div>
+	</footer>
+
+	<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+			class="bi bi-arrow-up-short"></i></a>
+
+	<!-- Vendor JS Files -->
+	<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+	<script src="assets/vendor/aos/aos.js"></script>
+	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+	<script src="assets/vendor/typed.js/typed.umd.js"></script>
+	<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+	<!-- Template Main JS File -->
+	<script src="assets/js/main.js"></script>
 
 </body>
 
